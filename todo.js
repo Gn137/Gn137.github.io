@@ -16,6 +16,7 @@ addBtn.onclick = () => {
   // 如果輸入不爲空，呼叫新增 TODO 函式
   if (newTodo !== '') {
     addTodo(newTodo);
+    todoInput.value = '';
   }
 }
 // 定義全部清除按鈕，並將 TODO 資料陣列清空
@@ -41,6 +42,7 @@ function addTodo(newTodo) {
       completed: false
     })
     renderTodo(todoData);
+
   }
 }
 // 呈現 TODO LIST
