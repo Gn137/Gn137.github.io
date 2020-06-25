@@ -50,6 +50,7 @@ function renderTodo(data) {
   // 將要 APPEND 的 HTML 存入
   let str = '';
   data.forEach(item => {
+    // 作業板型複製，建立一個新的 li 後塞入 ul 內
     str += `<li class="list-group-item">
     <div class="d-flex">
     <div class="form-check" data-action="complete" data-id="${item.id}">
